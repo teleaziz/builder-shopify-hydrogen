@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@builder.io/react": "^1.1.47",
+    "@builder.io/widgets": "^1.2.21",
     "@headlessui/react": "^1.4.1",
     "@shopify/hydrogen": "^0.10.1",
     "body-parser": "^1.19.1",

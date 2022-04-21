@@ -10,6 +10,7 @@ export default function Page(props) {
   const content = useQuery([MODEL_NAME, props.pathname], async () => {
     return await builder
       .get(MODEL_NAME, {
+        includeRefs: true,
         userAttributes: {
           urlPath: props.pathname,
         },
@@ -25,7 +26,7 @@ export default function Page(props) {
       {!content.data && !isPreviewing ? (
         <NotFound />
       ) : (
-        <BuilderComponent model={MODEL_NAME} content={content?.data} />
+        <BuilderComponent options={{ includeRefs: true }} model={MODEL_NAME} content={content?.data} />
       )}
     </Layout>
   );
