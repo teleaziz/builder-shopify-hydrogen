@@ -1,7 +1,7 @@
-__unconfig_vite.config.js
-node_modules
-.DS_Store
-dist
-dist-ssr
-*.local
-.yarn
+/nbproject/
+/.idea/*
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
